@@ -10,77 +10,78 @@
 </head>
 
 <body>
-  <header>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-  </header>
+  <main class="content">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
 
-  <form id="survey-form">
-    <div class="form-group">
-      <label id="name-label" for="name">Name</label>
-      <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
-    </div>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+      </div>
 
-    <div class="form-group">
-      <label id="email-label" for="email">Email</label>
-      <input id="email" type="email" class="form-control" placeholder="Enter your Email" required>
-    </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
 
-    <div class="form-group">
-      <label id="number-label" for="number">Age<span> (optional)</span></label>
-      <input id="number" type="number" min="18" max="99" class="form-control" placeholder="Age">
-    </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span> (optional)</span></label>
+        <input id="number" type="number" min="18" max="99" class="form-control" placeholder="Age">
+      </div>
 
-    <div class="form-group">
-      <p> Which option best describe your current role?</p>
-      <select id="dropdown" name="role" class="form-control" required>
-        <option disabled>Select current role</option>
-        <option value="student">Student</option>
-        <option value="employed">Employed</option>
-      </select>
-    </div>
+      <div class="form-group">
+        <p> Which option best describe your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled>Select current role</option>
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+        </select>
+      </div>
 
-    <div class="form-group">
-      <p>Would you recommend our services to a friend?</p>
-      <label for="recomendation">
-        <input class="radio-btn" type="radio" name="recommendation" value="definitely">Definitely</label>
-      <label for="recomendation">
-        <input class="radio-btn" type="radio" name="recommendation" value="maybe">Maybe</label>
-      <label for="recomendation">
-        <input class="radio-btn" type="radio" name="recommendation" value="never">Never</label>
-    </div>
+      <div class="form-group">
+        <p>Would you recommend our services to a friend?</p>
+        <label for="recomendation">
+          <input class="radio-btn" type="radio" name="recommendation" value="definitely">Definitely</label>
+        <label for="recomendation">
+          <input class="radio-btn" type="radio" name="recommendation" value="maybe">Maybe</label>
+        <label for="recomendation">
+          <input class="radio-btn" type="radio" name="recommendation" value="never">Never</label>
+      </div>
 
-    <div class="form-group">
-      <p>What would you like to see improved? <span>(Check all that apply)</span></p>
-      <label class="checkbox">
-        <input class="checkbox" value="front-end-projects" type="checkbox">Front-end Projects</label>
-      <label class="checkbox">
-        <input class="checkbox" value="back-end-projects" type="checkbox">Back-end Projects</label>
-      <label class="checkbox">
-        <input class="checkbox" value="data-visualization" type="checkbox">Data Visualization</label>
-      <label class="checkbox">
-        <input class="checkbox" value="challenges" type="checkbox">Challenges</label>
-      <label class="checkbox">
-        <input class="checkbox" value="open-source-community" type="checkbox">Open Source Community</label>
-      <label class="checkbox">
-        <input class="checkbox" value="gitter-help-room" type="checkbox">Gitter help room</label>
-      <label class="ckeckbox">
-        <input class="checkbox" value="videos" type="checkbox">Videos</label>
-      <label class="ckeckbox">
-        <input class="checkbox" value="city-meetups" type="checkbox">City Meetups</label>
-      <label class="checkbox">
-        <input class="checkbox" value="wiki" type="checkbox">Wiki</label>
-    </div>
+      <div class="form-group">
+        <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+        <label class="checkbox">
+          <input class="checkbox" value="front-end-projects" type="checkbox">Front-end Projects</label>
+        <label class="checkbox">
+          <input class="checkbox" value="back-end-projects" type="checkbox">Back-end Projects</label>
+        <label class="checkbox">
+          <input class="checkbox" value="data-visualization" type="checkbox">Data Visualization</label>
+        <label class="checkbox">
+          <input class="checkbox" value="challenges" type="checkbox">Challenges</label>
+        <label class="checkbox">
+          <input class="checkbox" value="open-source-community" type="checkbox">Open Source Community</label>
+        <label class="checkbox">
+          <input class="checkbox" value="gitter-help-room" type="checkbox">Gitter help room</label>
+        <label class="ckeckbox">
+          <input class="checkbox" value="videos" type="checkbox">Videos</label>
+        <label class="ckeckbox">
+          <input class="checkbox" value="city-meetups" type="checkbox">City Meetups</label>
+        <label class="checkbox">
+          <input class="checkbox" value="wiki" type="checkbox">Wiki</label>
+      </div>
 
-    <div class="form-group">
-      <label id="comment-label" for="comment">Any comments or suggestion?</label>
-      <textarea id="comment" class="input-textarea" name="comment" cols="50" rows="5"
-        placeholder="Enter your comments here..."></textarea>
-    </div>
+      <div class="form-group">
+        <label id="comment-label" for="comment">Any comments or suggestion?</label>
+        <textarea id="comment" class="input-textarea" name="comment" cols="50" rows="5"
+          placeholder="Enter your comments here..."></textarea>
+      </div>
 
-    <button id="submit" type="submit">Submit</button>
-
-  </form>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
 </body>
 
 </html>
